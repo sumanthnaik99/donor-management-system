@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="temple_app.Update_donorController">
+   <children>
+      <HBox>
+         <children>
+            <HBox>
+               <children>
+                  <VBox>
+                     <children>
+                        <HBox prefHeight="350.0" prefWidth="350.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Member ID :">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="City :">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="State">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="D.O.B :">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Group :">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone No. :">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="350.0" prefWidth="136.0">
+                                 <children>
+                                    <TextField fx:id="umem_id">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="udonor_dn">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="udonor_ln">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="udonor_add">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="udonor_city">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="udonor_state">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <DatePicker fx:id="udonor_dob">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </DatePicker>
+                                    <TextField fx:id="udonor_bg">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="udonor_phno">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_RIGHT" prefHeight="350.0" prefWidth="112.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#search_donor" prefHeight="25.0" prefWidth="95.0" text="Search">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#update_donor_details" text="Update" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
